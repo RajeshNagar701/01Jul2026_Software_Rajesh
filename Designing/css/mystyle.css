@@ -1,0 +1,25 @@
+		/* grouping css :  css comment */
+		
+		h2,h3{	color:yellow;background-color:red;text-align:center }
+		
+		.mystyle{color:pink;background-color:green;text-align:center }
+		.upper{text-transform:lowercase}
+		.underline{ text-decoration:underline}
+		
+		#mydesign{color:skyblue;background-color:blue;text-align:right }
+	
+		.box{
+			width:100%;
+			height:100px;
+			background-color:red;
+		}
+		
+		.box h1{
+			text-align:center;
+			color:white;
+		}
+		
+		h4.test{
+			text-align:center;
+			color:purple;
+		}
