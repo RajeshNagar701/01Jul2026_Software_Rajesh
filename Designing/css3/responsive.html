@@ -13,7 +13,7 @@ Responsive web design is about using HTML and CSS to automatically
 resize, hide, shrink, or enlarge a website, to make it look good on all devices.
 
 
-CSS Media Queries
+CSS 3 Media Queries
 CSS media queries allow you to apply styles based on the characteristics of a 
 device or the environment displaying the web page.
 
@@ -24,8 +24,17 @@ The CSS @media rule is used to add media queries to your style sheet.
 Use Mediaqueries to Add a Breakpoint
 
 @media (min-width: 600px) {
-	
+	...
 }
+
+@media (min-width: 768px) {
+	......
+}
+
+@media (min-width: 900px) {
+	......
+}
+
 
 -->
 
@@ -48,13 +57,13 @@ Use Mediaqueries to Add a Breakpoint
 	}
 	
 	@media only screen and (min-width: 600px) {
-		.box1{ width:50%}
-		.box2{ width:50%}
+		.box1{ width:100%}
+		.box2{ width:100%}
 	}
 	
 	@media only screen and (min-width: 768px) {
-		.box1{ width:40%}
-		.box2{ width:40%}
+		.box1{ width:50%}
+		.box2{ width:50%}
 	}
 	
 	@media only screen and (min-width: 900px) {
@@ -66,6 +75,14 @@ Use Mediaqueries to Add a Breakpoint
 </head>
 <body>
 	
+	<div class="box1">
+		<h1>Box1</h1>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+	</div>
+	<div class="box2">
+		<h1>Box2</h1>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+	</div>
 	<div class="box1">
 		<h1>Box1</h1>
 		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,

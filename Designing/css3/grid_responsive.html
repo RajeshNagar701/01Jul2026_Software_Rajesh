@@ -31,28 +31,33 @@ if a certain condition is true.
 	flex-wrap: wrap;
 }
 
-/* 1) Mobile view */
-[class*=col-]{
+/* Flow is fix mobile > tablet > desktop   */
+
+
+/* mobile */
+[class*="col-"]{
 	width:100%;
 }
 
-/* 2) Tablet view */
-@media only screen and (min-width: 600px) {
-	.col-s-1{ width:8.33% }
-	.col-s-2{ width:16.66% }
-	.col-s-3{ width:25% }
-	.col-s-4{ width:33.33% }
-	.col-s-5{ width:41.66% }
-	.col-s-6{ width:50% }
-	.col-s-7{ width:58.33% }
-	.col-s-8{ width:66.66% }
-	.col-s-9{ width:75% }
-	.col-s-10{ width:83.33% }
-	.col-s-11{ width:91.66% }
-	.col-s-12{ width:100% }
+/* tablet */
+@media only screen and (min-width: 576px) {
+	.col-t-1{ width:8.33% }
+	.col-t-2{ width:16.66% }
+	.col-t-3{ width:25% }
+	.col-t-4{ width:33.33% }
+	.col-t-5{ width:41.66% }
+	.col-t-6{ width:50% }
+	.col-t-7{ width:58.33% }
+	.col-t-8{ width:66.66% }
+	.col-t-9{ width:75% }
+	.col-t-10{ width:83.33% }
+	.col-t-11{ width:91.66% }
+	.col-t-12{ width:100% }
 }
 
-/* 3) desktop view */
+
+
+/* desktop */
 @media only screen and (min-width: 768px) {
 	.col-1{ width:8.33% }
 	.col-2{ width:16.66% }
@@ -66,19 +71,6 @@ if a certain condition is true.
 	.col-10{ width:83.33% }
 	.col-11{ width:91.66% }
 	.col-12{ width:100% }
-}
-
-@media only screen and (min-width: 768px) {
-	.cols-1{ width:10% }
-	.cols-2{ width:20% }
-	.cols-3{ width:30% }
-	.cols-4{ width:40% }
-	.cols-5{ width:50% }
-	.cols-6{ width:60% }
-	.cols-7{ width:70% }
-	.cols-8{ width:80% }
-	.cols-9{ width:90% }
-	.cols-10{ width:100% }
 }
 
 
@@ -125,17 +117,17 @@ if a certain condition is true.
 <body>
 	
 	<div class="row">
-		<div class="col-12 col-s-12 head1">
+		<div class="col-12 col-t-12 head1">
 			<h1>Head 1</h1>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-12 col-s-12 head2">
+		<div class="col-12 col-t-12 head2">
 			<h3>Head 2</h3>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-12 col-s-12 banner">
+		<div class="col-12 col-t-12 banner">
 			<h1>BANNER</h1>
 			<h1>BANNER</h1>
 			<h1>BANNER</h1>
@@ -145,35 +137,35 @@ if a certain condition is true.
 	</div>
 	
 	<div class="row">
-		<div class="col-12 col-s-12 navbar">
+		<div class="col-12 col-t-12 navbar">
 			<p>Navbar</p>
 		</div>
 	</div>
 	
 	<div class="row">
-		<div class="col-2 col-s-4 sidebar">
+		<div class="col-2 col-t-4 sidebar">
 			<h1>Sidebar</h1>
 		</div>
-		<div class="col-8 col-s-8 mainbar">
+		<div class="col-8 col-t-8 mainbar">
 			<h1>Mainbar</h1>
 			<h1>Mainbar</h1>
 			<h1>Mainbar</h1>
 			<h1>Mainbar</h1>
 			<h1>Mainbar</h1>
 			<div class="row">
-				<div class="col-3 col-s-6 footer">
+				<div class="col-3 col-t-6 footer">
 					<h1>Footer 1</h1>
 				</div>
-				<div class="col-3 col-s-6 footer">
+				<div class="col-3 col-t-6 footer">
 					<h1>Footer 2</h1>
 					<h1>Footer 2</h1>
 				</div>
-				<div class="col-3 col-s-6 footer">
+				<div class="col-3 col-t-6 footer">
 					<h1>Footer 3</h1>
 					<h1>Footer 3</h1>
 					<h1>Footer 3</h1>
 				</div>
-				<div class="col-3 col-s-6 footer">
+				<div class="col-3 col-t-6 footer">
 					<h1>Footer 4</h1>
 					<h1>Footer 4</h1>
 					<h1>Footer 4</h1>
@@ -189,25 +181,25 @@ if a certain condition is true.
 			<h1>Mainbar</h1>
 			<h1>Mainbar</h1>
 		</div>
-		<div class="col-2 col-s-12 sidebar">
+		<div class="col-2 col-t-12 sidebar">
 			<h1>Sidebar</h1>
 		</div>
 	</div>
 	
 	<div class="row">
-		<div class="col-3 col-s-6 footer">
+		<div class="col-3 col-t-6 footer">
 			<h1>Footer 1</h1>
 		</div>
-		<div class="col-3 col-s-6 footer">
+		<div class="col-3 col-t-6 footer">
 			<h1>Footer 2</h1>
 			<h1>Footer 2</h1>
 		</div>
-		<div class="col-3 col-s-6 footer">
+		<div class="col-3 col-t-6 footer">
 			<h1>Footer 3</h1>
 			<h1>Footer 3</h1>
 			<h1>Footer 3</h1>
 		</div>
-		<div class="col-3 col-s-6 footer">
+		<div class="col-3 col-t-6 footer">
 			<h1>Footer 4</h1>
 			<h1>Footer 4</h1>
 			<h1>Footer 4</h1>
