@@ -40,11 +40,34 @@
 
 method 
 post : use all time
-
 get :(default) Not use in form :
 
 not secutre display in url
 only get 100 char
+
+
+=>For all input type : form-control 
+
+=>radio & checkbox :  form-check-input
+
+	<div class="form-check">
+	  <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+	  Option 1
+	</div>
+
+=>Floating form
+
+<div class="form-floating mb-3 mt-3">
+  <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+  <label for="email">Email</label>
+</div>
+
+=> Validation
+
+.was-validated
+.valid-feedback
+.invalid-feedback
+
 
 -->
 
@@ -52,17 +75,13 @@ only get 100 char
 
 <div class="container">
 	<h1 align="center">Add Employee</h1>
-
-	
-		<form action="" method="post" >
+	<form action="" method="post" >
 		First Name: <input type="text" name="fnm" class="form-control">
 		First Name: <input type="text" name="fnm" class="form-control">
 		First Name: <input type="text" name="fnm" class="form-control">
 		First Name: <input type="text" name="fnm" class="form-control">
-		<input type="submit" name="submit" value="Register" class="btn btn-primary">
-			
-		</form>
-	
+		<input type="submit" name="submit" value="Register" class="btn btn-primary">	
+	</form>
 </div>
 
 
@@ -75,7 +94,7 @@ only get 100 char
 <div class="container">
 	<h1 align="center">Add Employee</h1>
 
-	<table  class="table">
+	<table  class="table table-dark">
 		<form action="" method="post" >
 		<tr>
 			<td>First Name: </td>
@@ -107,40 +126,44 @@ only get 100 char
 
 		</form>
 	</table>
-</div>
+	
+	<br>
+	<hr>
 
-
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<h1 align="center">Add Employee</h1>
-		</div>
+	<div class="form-floating mb-3 mt-3">
+	  <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+	  <label for="email">Email</label>
 	</div>
 	
+	<br>
+	<hr>
 	
-	<form action="" method="post" >
-		<div class="row">
-			<div class="col-md-6 p-2">
-				First Name: <input type="text" name="fnm" class="form-control">
-			</div>	
-			<div class="col-md-6 p-2">
-				First Name: <input type="text" name="fnm" class="form-control">
-			</div>	
-			<div class="col-md-6 p-2">
-				First Name: <input type="text" name="fnm" class="form-control">
-			</div>	
-			<div class="col-md-6 p-2">
-				First Name: <input type="text" name="fnm" class="form-control">
-			</div>
-			<div class="col-md-6 p-2">
-				<input type="submit" name="submit" value="Register" class="btn btn-primary">
-			</div>
+	<div class="container">
+	<h1 align="center">Validation</h1>
+	<form action="" method="post" class="was-validated">
+		<div class="p-3">
+			First Name: 
+			<input type="text" name="fnm" required class="form-control">
+			<div class="valid-feedback">Valid First Name.</div>
+			<div class="invalid-feedback">Please fill out First Name field.</div>
+		</div>
+		
+		<div class="p-3">
+			First Name: 
+			<input type="email" name="fnm" required class="form-control">
+			<div class="valid-feedback">Valid Email.</div>
+			<div class="invalid-feedback">Please fill out Email field.</div>
 			
+		</div>
+		<div class="p-3">
+			<input type="submit" name="submit" class="btn btn-primary mt-3">
 		</div>	
-	</form>	
-	
+	</form>
 </div>
+</div>
+
+
+
 
 
 
